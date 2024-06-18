@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="navbar">
+            <div class="divLogo">
+                <img src="./asset/logo.png" alt="logo" class="logo">
+                <h1>Kalkulator Suhu</h1>
+            </div>
+    </header>
+
+    <div class="Container">
+        <div class="rumusContainer">
+            <div>
+                <h1>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h1>
+                <p>Suhu <span style="font-size: 20px; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu S dalam derajat Celcius (&deg;C) kali S dalam derajat Fahrenheit (&deg;F) sama dengan suhu 9/5 tambah S dalam derajat Fahrenheit (&deg;F) sama dengan suhu 32.</p>
+                <p><span style="font-size: 20px; font-style: italic;">S</span>(&deg;F) = (<span style="font-size: 20px; font-style: italic;">S</span>(&deg;C) x 9/5) + 32</p>
+                <p>atau</p>
+                <p><span style="font-size: 20px; font-style: italic;">S</span>(&deg;F) = (<span style="font-size: 20px; font-style: italic;">S</span>(&deg;C) x 1.8) + 32</p>
+            </div>
+            <hr>
+            <div>
+                <h1>Cara Konversi Dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</h1>
+                <p>Suhu <span style="font-size: 20px; font-style: italic;">S</span> dalam derajat Celcius (&deg;C) sama dengan suhu <span style="font-size: 20px; font-style: italic;">S</span> dalam derajat Fahrenheit (&deg;F) dikurangi 32, kemudian dibagi 5/9.</p>
+                <p><span style="font-size: 20px; font-style: italic;">S</span>(&deg;C) = (<span style="font-size: 20px; font-style: italic;">S</span>(&deg;F) - 32) x 5/9</p>
+                <p>atau</p>
+                <p><span style="font-size: 20px; font-style: italic;">S</span>(&deg;C) = (<span style="font-size: 20px; font-style: italic;">S</span>(&deg;F) - 32) x 0.5556</p>
+            </div>
+            <hr>
+            <div>
+                <h1>Apa itu Celcius?</h1>
+                <p>Celcius adalah salah satu skala pengukuran suhu yang paling umum digunakan di dunia. Skala ini dinamai dari Anders Celsius, seorang astronom dan fisikawan Swedia yang hidup pada abad ke-18. Anders Celsius mengembangkan skala termometer Celsius pada tahun 1742, di mana titik beku air adalah 0 derajat Celsius dan titik didih air adalah 100 derajat Celsius pada tekanan standar. Skala ini sangat berguna dalam berbagai aplikasi ilmiah, industri, dan kehidupan sehari-hari karena kepraktisannya dalam mengukur suhu dengan mudah dan akurat.</p>
+            </div>
+            <div>
+                <h1>Apa itu Fahrenheit?</h1>
+                <p>Fahrenheit adalah skala pengukuran suhu lainnya yang sering digunakan di beberapa negara, terutama di Amerika Serikat. Skala ini dinamai dari Daniel Gabriel Fahrenheit, seorang fisikawan dan insinyur Jerman-Polandia yang mengembangkan skala termometer Fahrenheit pada tahun 1724. Skala Fahrenheit menggunakan titik pembekuan air sebagai 32 derajat Fahrenheit dan titik didih air sebagai 212 derajat Fahrenheit pada tekanan standar. Perbedaan utama antara skala Fahrenheit dengan skala Celsius adalah pada titik nol dan peningkatan suhu antar pembekuan dan didih air. Hal ini membuatnya memiliki rentang yang sedikit lebih besar antara titik beku dan didih air dibandingkan dengan skala Celsius.</p>
+            </div>
+        </div>
+        
+        <div class="textareaContainer" id="textareaContainerID">
+            <label>Masukan suhu derajat Celcius (&deg;C) pada kotak dibawah, lalu klik tombol konversi dibawah untuk mendapatkan hasil konfersi dalam bentuk Fahrenheit (&deg;F)</label>
+            <textarea type="text" id="inputCelsius" placeholder="Celcius (&deg;C)"></textarea>
+            <div class="btnContainer">
+                <button class="btn" id="KonversiBTN" onclick="konversiBtn()">Konversi</button>
+                <button class="btn" onclick="reverse()">Reverse</button>
+                <button class="btn" id="" onclick="resetBtn()">Reset</button>
+            </div><br>
+            <label>Fahrenheit (&deg;F)</label>
+            <textarea type="text" id="outputFahrenheit" placeholder="Fahrenheit (&deg;F)" readonly></textarea><br>
+            <label>Cara Kalkulasi</label>
+            <textarea type="text" id="outputAll" placeholder="Formula" readonly></textarea>
+            <button class="copyBTN" onclick="copyBtn()">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+
+    <div class="footer" id="footer">
+        <p>Made by : Naufal</p>
+
+    </div>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>
