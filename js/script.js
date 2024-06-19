@@ -3,7 +3,7 @@
     const outputFahrenheit=document.getElementById('outputFahrenheit')
     const outputAll=document.getElementById('outputAll')
    
-
+    //konversi function
     function konversiBtn(){
         let C = inputCelsius.value
         let fahrenheit = (C * 9/5) + 32
@@ -22,6 +22,7 @@
         }
     }
 
+    //reverse function
     function reverse(){
         let C = inputCelsius.value
         let fahrenheit = (C * 9/5) + 32
@@ -40,6 +41,7 @@
         }
     }
 
+    //copy to clipboard function
     function copyBtn(){
         // Get the text field
         let copyText = document.getElementById("outputAll");
@@ -49,12 +51,14 @@
         navigator.clipboard.writeText(copyText.value);
     }
 
+    //reset function
     function resetBtn(){
         document.getElementById('inputCelsius').value = '';
         document.getElementById('outputFahrenheit').value = '';
         document.getElementById('outputAll').value = '';
         return;
     }
+}
 
     //window.onscroll = function() {
     //    if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
@@ -67,7 +71,6 @@
     //        document.getElementById('textareaContainerID').style.position = 'fixed';
     //    }
     //} 
-}
 //window.addEventListener("scroll", function(){
        // var header = document.querySelector("header")
         //header.classList.toggle("sticky", window.scrollY > 0)
