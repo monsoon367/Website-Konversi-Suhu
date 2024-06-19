@@ -37,7 +37,7 @@
             return;
         }
         else {
-             outputAll.value = `(${fahrenheit}°F - 32) x 5/9  = ${celcius}°C`
+             outputAll.value = `(${fahrenheit.toFixed(2)}°F - 32) x 5/9  = ${celcius}°C`
         }
     }
 
